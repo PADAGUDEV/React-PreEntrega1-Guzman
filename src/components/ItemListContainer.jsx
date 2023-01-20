@@ -2,7 +2,7 @@ const ItemListContainer =() => {
     return(
         <section className="item-list-container">
             <h2 className="item-list-container-title">Lista de nuestros productos</h2>
-            <ul>
+            <ul className="list">
                 <li className="pordList">Harina Pan</li>
                 <li className="pordList">Café colombia</li>
                 <li className="pordList">Whiskies importados</li>

@@ -37,7 +37,6 @@ body {
 }
 
 #navbar__menu {
-  /* display: flex; */
   position:absolute;
   margin-top: -21vw;
   transform: translateX(-105vw);
@@ -46,7 +45,6 @@ body {
   color: white;
   height: 50vh;
   background-color: rgb(38, 182, 43);
-  /* padding: 20px; */
   font-family: sans-serif;
 }
 
@@ -71,7 +69,7 @@ body {
   }
 
   #navbar__menu.slideOut {
-    transform: translateX(-100vw);
+    transform: translateX(-90vw);
   }
 
   @-webkit-keyframes swing {
@@ -80,8 +78,8 @@ body {
       transform: translateX(10vw)
     }
     15%{
-        -webkit-transform: translateX(20vw);
-        transform: translateX(20vw);
+        -webkit-transform: translateX(0vw);
+        transform: translateX(0vw);
     }
     50%{
         -webkit-transform: translateX(0vw);
@@ -128,3 +126,7 @@ body {
   animation-iteration-count: 1;
 }
 
+.item-list-container-title {
+  font-size: 14px;
+  text-align: center;
+}
