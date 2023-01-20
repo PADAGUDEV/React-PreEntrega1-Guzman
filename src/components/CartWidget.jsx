@@ -1,34 +1,15 @@
 import React from 'react';
-import './CartWidget.css'
-const NavigationBar = ({ visible }) => ( 
-    <div id="navbar" className={visible ? 'slideIn swing' : 'slideOut'} >
-    Hello
-    </div>
-)
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import './CartWidget.css';
 
-class App extends React.Component {
-
-    constructor(props) {
-    super(props)
-    this.handleClick = this.handleClick.bind(this)
-    this.state = { visible: false }
-    }
-
-    handleClick() {
-    this.setState(prev => ({ visible: !prev.visible }))
-    }
-    
-    render() {
+const CartWidget = () => {
     return (
-        <div id="App">
-        <button type="button" onClick={this.handleClick}>
-            {this.state.visible ? 'Hide navbar' : 'Show navbar'}
-        </button>
-        <hr />
-        <NavigationBar visible={this.state.visible} />
+        <div className="cart-widget">
+        <FontAwesomeIcon icon={faCartShopping} size="2x" color="green"  />
+        <div className="qty-display">5</div>
         </div>
-    )
-    }
-}
-export default App
-// ReactDOM.render(<App />, document.getElementById("root"))
+    );
+};
+
+export default CartWidget;

@@ -1,7 +1,19 @@
-const ItemListContainer =({greeting}) => {
+const ItemListContainer =() => {
     return(
         <section className="item-list-container">
-            <h2 className="item-list-container-title">{greeting}</h2>
+            <h2 className="item-list-container-title">Lista de nuestros productos</h2>
+            <ul>
+                <li className="pordList">Harina Pan</li>
+                <li className="pordList">Café colombia</li>
+                <li className="pordList">Whiskies importados</li>
+                <li className="pordList">Platano por kilo</li>
+                <li className="pordList">Chocolate</li>
+                <li className="pordList">Golosinas</li>
+                <li className="pordList">Queso duro</li>
+                <li className="pordList">Jugo congelado</li>
+                <li className="pordList">Latita cerveza</li>
+                <li className="pordList">Avichuelas</li>
+            </ul>
         </section>
     )
 }
