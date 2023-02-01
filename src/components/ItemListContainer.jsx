@@ -1,7 +1,8 @@
-const ItemListContainer =() => {
+const ItemListContainer =(props) => {
     return(
         <section className="item-list-container">
-            <h2 className="item-list-container-title">Lista de nuestros productos</h2>
+            <h2 style={props.style}>{props.greeting}</h2>
+            <h3 className="item-list-container-title">Lista de nuestros productos</h3>
             <ul className="list">
                 <li className="pordList">Harina Pan</li>
                 <li className="pordList">Café colombia</li>
